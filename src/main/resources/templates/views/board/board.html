@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <title>mysite</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -33,15 +33,14 @@
                     <th>작성일</th>
                     <th>&nbsp;</th>
                 </tr>
-
-                    <tr>
-                        <td>1</td>
+                    <tr th:each="board : ${boardList}">
+                        <td th:text="${board.no}"></td>
                         <td style="text-align:left; padding-left: 20px">
-                            <a href="#">안녕하세요~</a>
+                            <a th:text="${board.title}" href="#" ></a>
                         </td>
-                        <td>이효리</td>
-                        <td>13</td>
-                        <td>2019-11-11</td>
+                        <td th:text="${board.userName}"></td>
+                        <td th:text="${board.hit}"></td>
+                        <td th:text="${board.regDate}"></td>
                         <td><a href="#" class="del">삭제</a></td>
                     </tr>
 
