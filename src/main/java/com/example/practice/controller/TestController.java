@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-// TO-BE
 @Controller
 @RequestMapping("/test")
 public class TestController {
@@ -21,14 +20,5 @@ public class TestController {
 //        return "index/index"; // index.html 파일 경로매핑
 //    }
 
-    @Autowired
-    private BoardService boardService;
-
-    @RequestMapping("/board") //
-    public String getBoardList(Model model){
-        List<BoardVo> boardList =  boardService.getBoardList();
-        model.addAttribute("boardList", boardList);
-        return "views/board/board"; // board.html 파일 경로매핑
-    }
 
 }
