@@ -11,13 +11,37 @@ import java.util.List;
 @Repository
 public class BoardDao {
 
-    @Autowired
     private SqlSession sqlSession;
+
+    public BoardDao(SqlSession sqlSession){
+        this.sqlSession = sqlSession;
+    }
 
     public List<BoardVo> selectBoardList() {
 
         List<BoardVo> boardList = sqlSession.selectList("board.getBoardList");
 
         return boardList;
+    }
+
+    public BoardVo selectBoardByBoardNo(Long boardNo) {
+
+        BoardVo boardVo = sqlSession.selectOne("board.selectBoardByBoardNo", boardNo);
+
+        return boardVo;
+    }
+
+    public int deleteBoardByBoardNo(Long boardNo) {
+
+        int deleteBoardResult = sqlSession.delete("board.deleteBoardByBoardNo", boardNo);
+
+        return deleteBoardResult;
+    }
+
+    public int insertBoard(BoardVo boardVo) {
+
+        int insertBoardResult = sqlSession.insert("board.insertBoard", boardVo);
+
+        return insertBoardResult;
     }
 }
