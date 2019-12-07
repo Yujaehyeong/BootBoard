@@ -19,7 +19,7 @@ public class BoardDao {
 
     public List<BoardVo> selectBoardList() {
 
-        List<BoardVo> boardList = sqlSession.selectList("board.getBoardList");
+        List<BoardVo> boardList = sqlSession.selectList("board.selectBoardList");
 
         return boardList;
     }
