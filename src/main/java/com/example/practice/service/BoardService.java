@@ -37,8 +37,14 @@ public class BoardService {
 
     public Boolean createBoard(BoardVo boardVo) {
 
-        int deleteBoardResult = boardDao.insertBoard(boardVo);
+        int insertBoardResult = boardDao.insertBoard(boardVo);
 
-        return deleteBoardResult == 1 ? true : false;
+        return insertBoardResult == 1 ? true : false;
+    }
+
+    public Boolean modifyBoardByBoardNo(BoardVo boardVo) {
+        int updateBoardResult = boardDao.updateBoard(boardVo);
+        return updateBoardResult == 1 ? true : false;
+
     }
 }

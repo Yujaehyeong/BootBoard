@@ -36,16 +36,23 @@ public class BoardController {
         return "views/board/board_detail"; // board.html 파일 경로매핑
     }
 
+    @PostMapping("/")
+    public String createBoard(BoardVo boardVo) {
+        Boolean createBoardResult = boardService.createBoard(boardVo);
+        return "redirect:/board/main"; // board.html 파일 경로매핑
+    }
+
     @DeleteMapping("/")
     public String removeBoard(Long boardNo) {
         Boolean removeBoardResult = boardService.removeBoardByBoardNo(boardNo);
         return "redirect:/board/main"; // board.html 파일 경로매핑
     }
 
-    @PostMapping("/")
-    public String createBoard(BoardVo boardVo) {
-        Boolean createBoardResult = boardService.createBoard(boardVo);
+    @PutMapping("/")
+    public String modifyBoard(BoardVo boardVo) {
+        Boolean removeBoardResult = boardService.modifyBoardByBoardNo(boardVo);
         return "redirect:/board/main"; // board.html 파일 경로매핑
     }
+
 
 }
