@@ -33,4 +33,12 @@
 			where board_no = #{boardNo};
 		]]>
 	</delete>
+
+	<update id="updateBoard" parameterType="boardvo">
+		<![CDATA[
+			update board
+			set title = #{title} , contents = #{contents}
+			where no= #{no}
+		]]>
+	</update>
 </mapper>
