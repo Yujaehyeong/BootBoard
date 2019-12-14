@@ -2,8 +2,6 @@ package com.example.practice.controller;
 
 import com.example.practice.service.BoardService;
 import com.example.practice.vo.BoardVo;
-import org.apache.ibatis.annotations.Delete;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
