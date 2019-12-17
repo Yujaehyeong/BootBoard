@@ -24,32 +24,32 @@ public class BoardController {
     public String getBoardList(Model model) {
         List<BoardVo> boardList = boardService.getBoardList();
         model.addAttribute("boardList", boardList);
-        return "views/board/board"; // board.html 파일 경로매핑
+        return "views/board/board";
     }
 
     @GetMapping("/")
     public String getBoard(Model model, Long boardNo) {
         BoardVo board = boardService.getBoardByBoardNo(boardNo);
         model.addAttribute("board", board);
-        return "views/board/board_detail"; // board.html 파일 경로매핑
+        return "views/board/board_detail";
     }
 
     @PostMapping("/")
     public String createBoard(BoardVo boardVo) {
         Boolean createBoardResult = boardService.createBoard(boardVo);
-        return "redirect:/board/main"; // board.html 파일 경로매핑
+        return "redirect:/board/main";
     }
 
     @DeleteMapping("/")
     public String removeBoard(Long boardNo) {
         Boolean removeBoardResult = boardService.removeBoardByBoardNo(boardNo);
-        return "redirect:/board/main"; // board.html 파일 경로매핑
+        return "redirect:/board/main";
     }
 
     @PutMapping("/")
     public String modifyBoard(BoardVo boardVo) {
         Boolean removeBoardResult = boardService.modifyBoardByBoardNo(boardVo);
-        return "redirect:/board/main"; // board.html 파일 경로매핑
+        return "redirect:/board/main";
     }
 
 
