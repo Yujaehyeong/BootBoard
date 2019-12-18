@@ -31,7 +31,7 @@ public class BoardController {
     public String getBoard(Model model, Long boardNo) {
         BoardVo board = boardService.getBoardByBoardNo(boardNo);
         model.addAttribute("board", board);
-        return "views/board/board_detail";
+        return "views/board/view";
     }
 
     @PostMapping("/")

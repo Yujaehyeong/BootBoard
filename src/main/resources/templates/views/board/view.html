@@ -15,12 +15,12 @@
 					</tr>
 					<tr>
 						<td class="label">제목</td>
-						<td>${vo.title}</td>
+						<td th:text="${board.title}"></td>
 					</tr>
 					<tr>
 						<td class="label">내용</td>
 						<td>
-							<div class="view-content">
+							<div class="view-content" th:text="${board.contents}">
 							</div>
 						</td>
 					</tr>
