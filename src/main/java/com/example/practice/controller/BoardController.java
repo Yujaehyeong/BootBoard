@@ -27,26 +27,26 @@ public class BoardController {
         return "views/board/board";
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public String getBoard(Model model, Long boardNo) {
         BoardVo board = boardService.getBoardByBoardNo(boardNo);
         model.addAttribute("board", board);
         return "views/board/view";
     }
 
-    @PostMapping("/")
+    @PostMapping("")
     public String createBoard(BoardVo boardVo) {
         Boolean createBoardResult = boardService.createBoard(boardVo);
         return "redirect:/board/main";
     }
 
-    @DeleteMapping("/")
+    @DeleteMapping("")
     public String removeBoard(Long boardNo) {
         Boolean removeBoardResult = boardService.removeBoardByBoardNo(boardNo);
         return "redirect:/board/main";
     }
 
-    @PutMapping("/")
+    @PutMapping("")
     public String modifyBoard(BoardVo boardVo) {
         Boolean removeBoardResult = boardService.modifyBoardByBoardNo(boardVo);
         return "redirect:/board/main";

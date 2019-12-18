@@ -36,7 +36,7 @@
                     <tr th:each="board : ${boardList}">
                         <td th:text="${board.no}"></td>
                         <td style="text-align:left; padding-left: 20px">
-                            <a th:text="${board.title}" href="/board/view?boardNo=${board.no}" ></a>
+                            <a th:text="${board.title}"  th:href="@{/board(boardNo=${board.no})}"></a>
                         </td>
                         <td th:text="${board.userName}"></td>
                         <td th:text="${board.hit}"></td>
