@@ -34,6 +34,13 @@ public class BoardController {
         return "views/board/view";
     }
 
+    @GetMapping("/modify")
+    public String getBoardForModify(Model model, Long boardNo) {
+        BoardVo board = boardService.getBoardByBoardNo(boardNo);
+        model.addAttribute("board", board);
+        return "views/board/modify";
+    }
+
     @PostMapping("")
     public String createBoard(BoardVo boardVo) {
         Boolean createBoardResult = boardService.createBoard(boardVo);
@@ -46,11 +53,11 @@ public class BoardController {
         return "redirect:/board/main";
     }
 
-    @PutMapping("")
+    @PostMapping("/modify")
     public String modifyBoard(BoardVo boardVo) {
+        System.out.println(boardVo.getTitle());
         Boolean removeBoardResult = boardService.modifyBoardByBoardNo(boardVo);
-        return "redirect:/board/main";
+        return "redirect:/board?boardNo="+boardVo.getNo();
     }
-
 
 }
