@@ -53,7 +53,7 @@ public class BoardController {
         return "redirect:/board/main";
     }
 
-    @PostMapping("/modify")
+    @RequestMapping(value = "/modify", method = RequestMethod.POST)
     public String modifyBoard(BoardVo boardVo) {
         System.out.println(boardVo.getTitle());
         Boolean removeBoardResult = boardService.modifyBoardByBoardNo(boardVo);

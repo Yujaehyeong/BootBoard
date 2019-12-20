@@ -37,8 +37,8 @@
 	<update id="updateBoard" parameterType="boardvo">
 		<![CDATA[
 			update board
-			set title = #{title} , contents = #{contents}
-			where no= #{no}
+			set board_title = #{title} , contents = #{contents}
+			where board_no= #{no}
 		]]>
 	</update>
 </mapper>
