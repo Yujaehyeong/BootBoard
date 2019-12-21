@@ -22,7 +22,7 @@
 		<![CDATA[
 		insert
 		into board (board_title, contents, writer_name, reg_date)
-		values (#{title}, #{contents}, 0, now())
+		values (#{title}, #{contents}, '', now())
 		]]>
 	</insert>
 
