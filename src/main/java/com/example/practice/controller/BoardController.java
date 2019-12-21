@@ -41,6 +41,11 @@ public class BoardController {
         return "views/board/modify";
     }
 
+    @GetMapping("/write")
+    public String getWriteBoardPage() {
+        return "views/board/write";
+    }
+
     @PostMapping("")
     public String createBoard(BoardVo boardVo) {
         Boolean createBoardResult = boardService.createBoard(boardVo);
