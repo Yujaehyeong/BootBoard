@@ -3,8 +3,10 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="com.example.practice.vo.BoardVo" alias="boardvo"/>
+		<typeAlias type="com.example.practice.vo.UserVo" alias="user"/>
 	</typeAliases>
 	<mappers>
-		 <mapper resource="mybatis/mapper/board.xml" />
+		<mapper resource="mybatis/mapper/board.xml" />
+		<mapper resource="mybatis/mapper/user.xml" />
 	</mappers>
 </configuration>
