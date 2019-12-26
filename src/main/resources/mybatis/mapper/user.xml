@@ -2,5 +2,39 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="user">
+    <select id="checkOverlapId" parameterType="string">
+    <![CDATA[
+        select user_id
+        from user
+        where user_id = #{id}
+    ]]>
+    </select>
+
+    <select id="selectUser" parameterType="string">
+    <![CDATA[
+        select *
+        from user
+        where user_id = #{id}
+    ]]>
+    </select>
+
+    <insert id="insertUser" parameterType="user">
+    <![CDATA[
+        insert
+        into user (user_id, user_password, user_name)
+        values(#{id}, #{password}, #{name})
+
+    ]]>
+    </insert>
+
+    <update id="updateUser" parameterType="user">
+    <![CDATA[
+        update user
+        set user_password = #{password}, name = #{name}
+        where user_id = #{id}
+    ]]>
+    </update>
+
+
 
 </mapper>
