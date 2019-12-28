@@ -22,7 +22,9 @@ public class UserController {
 
     @RequestMapping(value = "checkOverlapId", method = RequestMethod.GET)
     public String checkOverlapId(String id) {
+        if (userService.checkOverlapId(id)) {
 
+        }
         return "";
     }
 
@@ -33,12 +35,16 @@ public class UserController {
 
     @RequestMapping(value = "login", method = RequestMethod.POST)
     public String login(UserVo user, HttpSession session) {
+        if (userService.login(user)) {
+
+        }
         return "redirect:board/main";
     }
 
     @RequestMapping(value = "view/detail", method = RequestMethod.GET)
-    public String detailPage(Model model) {
-
+    public String detailPage(Model model, HttpSession session) {
+        String userId = (String)session.getAttribute("id");
+        UserVo user = userService.getUser(userId);
         return "user/detail";
     }
 
@@ -49,6 +55,10 @@ public class UserController {
 
     @RequestMapping(value = "modify", method = RequestMethod.POST)
     public String modifyUser(UserVo user) {
+        if (userService.modify(user)) {
+
+        }
+
         return "user/detail";
     }
 
