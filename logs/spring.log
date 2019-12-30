@@ -1,0 +1,36 @@
+2019-12-30 22:13:18.165  INFO 14232 --- [main] c.example.practice.PracticeApplication   : Starting PracticeApplication on DESKTOP-5A3RELD with PID 14232 (started by 갓맹주니행님 in C:\Users\갓맹주니행님\IdeaProjects\practice)
+2019-12-30 22:13:18.168  INFO 14232 --- [main] c.example.practice.PracticeApplication   : No active profile set, falling back to default profiles: default
+2019-12-30 22:13:18.631  WARN 14232 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.practice]' package. Please check your configuration.
+2019-12-30 22:13:18.995  INFO 14232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-12-30 22:13:19.014  INFO 14232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-30 22:13:19.015  INFO 14232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-12-30 22:13:19.111  INFO 14232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-30 22:13:19.111  INFO 14232 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 912 ms
+2019-12-30 22:13:19.456  INFO 14232 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-30 22:13:19.504  INFO 14232 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-30 22:13:19.635  INFO 14232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-12-30 22:13:19.638  INFO 14232 --- [main] c.example.practice.PracticeApplication   : Started PracticeApplication in 1.861 seconds (JVM running for 2.983)
+2019-12-30 22:13:19.639  INFO 14232 --- [main] com.example.practice.runner.BoardRunner  : =============
+2019-12-30 22:13:19.640  INFO 14232 --- [main] com.example.practice.runner.BoardRunner  : This is Spring Boot App
+2019-12-30 22:13:19.640  INFO 14232 --- [main] com.example.practice.runner.BoardRunner  : =============
+2019-12-30 22:13:32.542  INFO 14232 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-30 22:13:32.544  INFO 14232 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-30 22:13:32.549  INFO 14232 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-12-30 22:15:11.920  INFO 17076 --- [main] c.example.practice.PracticeApplication   : Starting PracticeApplication on DESKTOP-5A3RELD with PID 17076 (started by 갓맹주니행님 in C:\Users\갓맹주니행님\IdeaProjects\practice)
+2019-12-30 22:15:11.923  INFO 17076 --- [main] c.example.practice.PracticeApplication   : No active profile set, falling back to default profiles: default
+2019-12-30 22:15:12.362  WARN 17076 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.practice]' package. Please check your configuration.
+2019-12-30 22:15:12.735  INFO 17076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-12-30 22:15:12.753  INFO 17076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-30 22:15:12.753  INFO 17076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-12-30 22:15:12.839  INFO 17076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-30 22:15:12.839  INFO 17076 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 875 ms
+2019-12-30 22:15:13.151  INFO 17076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-30 22:15:13.198  INFO 17076 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-30 22:15:13.329  INFO 17076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-12-30 22:15:13.332  INFO 17076 --- [main] c.example.practice.PracticeApplication   : Started PracticeApplication in 1.745 seconds (JVM running for 2.729)
+2019-12-30 22:15:13.334  INFO 17076 --- [main] com.example.practice.runner.BoardRunner  : =============
+2019-12-30 22:15:13.334  INFO 17076 --- [main] com.example.practice.runner.BoardRunner  : This is Spring Boot App
+2019-12-30 22:15:13.334  INFO 17076 --- [main] com.example.practice.runner.BoardRunner  : =============
+2019-12-30 22:15:18.455  INFO 17076 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-30 22:15:18.456  INFO 17076 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-30 22:15:18.461  INFO 17076 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
